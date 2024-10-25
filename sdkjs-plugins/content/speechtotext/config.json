@@ -1,0 +1,30 @@
+{
+  "name": "语音识别",
+  "guid": "asc.{0616AE85-yysb-4B6B-A0A9-455C4F1503AD}",
+  "baseUrl": "",
+  "variations": [
+    {
+      "description": "语音识别",
+      "url": "index.html",
+      "icons": [
+        "resources/img/icon.png",
+        "resources/img/icon@2x.png"
+      ],
+      "isViewer": false,
+      "EditorsSupport": [
+        "word"
+      ],
+      "isVisual": true,
+      "isModal": true,
+      "isInsideMode": false,
+      "initDataType": "none",
+      "initData": "",
+      "isUpdateOleOnResize": true,
+      "buttons": [],
+      "size": [
+        392,
+        147
+      ]
+    }
+  ]
+}

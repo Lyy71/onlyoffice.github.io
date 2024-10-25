@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>语音转文字</title>
+  <script type="text/javascript" src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.js"></script>
+  <script type="text/javascript" src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins-ui.js"></script>
+  <link rel="stylesheet" href="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.css">
+  <style>
+    p,
+    a {
+      font-size: 12px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  </style>
+  <script src="scripts/speechRecognition.js"></script>
+</head>
+
+<body style="padding-left: 20px; padding-right: 20px">
+  <button id="startBtn">开始语音识别</button>
+  <button id="stopBtn" disabled>结束语音识别</button>
+  <p>识别结果：<span id="result"></span></p>
+  <h4 id="copied" style="display: none;"></h4>
+
+</body>
+
+</html>
