@@ -1,0 +1,34 @@
+{
+  "name": "语音识别",
+  "guid": "asc.{0616AE85-yysb-FunA-A0A9-455C4F1503AD}",
+  "baseUrl": "",
+  "variations": [
+    {
+      "description": "语音识别",
+      "url": "index.html",
+      "icons": [
+        "resources/img/icon.png",
+        "resources/img/icon@2x.png"
+      ],
+      "isViewer": false,
+      "EditorsSupport": [
+        "word"
+      ],
+      "isVisual": true,
+      "isModal": true,
+      "isInsideMode": false,
+      "initDataType": "none",
+      "initData": "",
+      "isUpdateOleOnResize": true,
+      "buttons": [],
+      "size": [
+        392,
+        960
+      ]
+    }
+  ],
+  "ssl": {
+    "cert_path": "/mnt/d/FunASR/certs/cert.pem",
+    "key_path": "/mnt/d/FunASR/certs/key.pem"
+  }
+}
