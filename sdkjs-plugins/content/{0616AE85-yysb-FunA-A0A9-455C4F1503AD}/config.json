@@ -23,8 +23,12 @@
       "buttons": [],
       "size": [
         392,
-        147
+        960
       ]
     }
-  ]
+  ],
+  "ssl": {
+    "cert_path": "/mnt/d/FunASR/certs/cert.pem",
+    "key_path": "/mnt/d/FunASR/certs/key.pem"
+  }
 }

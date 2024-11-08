@@ -5,12 +5,14 @@
 	<meta charset="utf-8" />
 	<!-- <meta name="viewport" content="width=device-width,initial-scale=1" /> -->
 	<title>语音识别</title>
-	<script type="text/javascript" src="../../v1/plugins.js"></script>
-	<script type="text/javascript" src="../../v1/plugins-ui.js"></script>
-	<link rel="stylesheet" href="../../v1/plugins.css">
+	<script type="text/javascript" src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.js"></script>
+	<script type="text/javascript" src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins-ui.js"></script>
+	<link rel="stylesheet" href="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.css">
 	<script src="scripts/recorder-core.js" charset="UTF-8"></script>
 	<script src="scripts/wav.js" charset="UTF-8"></script>
 	<script src="scripts/pcm.js" charset="UTF-8"></script>
+	<style>
+	</style>
 
 </head>
 
@@ -19,11 +21,11 @@
 	<div class="div_class_topArea">
 
 		<div class="div_class_recordControl">
-			<input type="hidden" value="wss://localhost:10095" id="wssip">
+			<!-- <input type="hidden" value="ws://localhost:10095" id="wssip"> -->
 			asr服务器地址(必填):
 			<br>
 			<input id="wssip" type="hide" onchange="addresschange()" style=" width: 100%;height:100%"
-				value="wss://localhost:10095" />
+				value="wss://127.0.0.1:10095" />
 			<br>
 			<a id="wsslink" href="#" onclick="window.open('wss://localhost:10095', '_blank')">
 				<div id="info_wslink">点此处手工授权wss://127.0.0.1:10095/</div>
@@ -76,11 +78,11 @@
 
 			<textarea rows="10" id="varArea" readonly="true" style=" width: 100%;height:100%"></textarea>
 			<br>
-			<div id="info_div">请点击开始</div>
+			<div id="info_div">请点击开始 <span id="lianjie" style="font-size: 22px;font-weight: 700;"></span></div>
 			<div class="div_class_buttons">
 				<button id="btnConnect">连接</button>
 				<button id="btnStart">开始</button>
-				<button id="btnStop">停止</button>
+				<button id="btnStop" disabled>停止</button>
 			</div>
 
 			<audio id="audio_record" type="audio/wav" controls style="margin-top: 12px; width: 100%;"></audio>
@@ -88,21 +90,6 @@
 	</div>
 
 
-	<!-- <script>
-		// 当DOM加载完成后执行的函数
-		document.addEventListener('DOMContentLoaded', function () {
-			// 获取按钮元素
-			var btn = document.getElementById('btnConnect');
-
-			var ta = document.getElementById('varArea');
-
-			// 隐藏按钮
-			ta.style.display = 'none';
-
-			// 触发按钮的点击事件
-			btn.click();
-		});
-	</script> -->
 
 
 </body>
@@ -110,3 +97,18 @@
 </html>
 <script src="scripts/wsconnecter.js" charset="utf-8"></script>
 <script src="scripts/main.js" charset="utf-8"></script>
+<script>
+	// 当DOM加载完成后执行的函数
+	// document.addEventListener('DOMContentLoaded', function () {
+	// 	// 获取按钮元素
+	// 	var btn = document.getElementById('btnConnect');
+
+	// 	// var ta = document.getElementById('varArea');
+
+	// 	// // 隐藏按钮
+	// 	// ta.style.display = 'none';
+
+	// 	// 触发按钮的点击事件
+	// 	btn.click();
+	// });
+</script>
